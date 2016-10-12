@@ -1,0 +1,31 @@
+﻿{
+	"version": "1.0.0-*",
+
+	"dependencies": {
+		"SpecFlow": "2.1.0",
+		"xunit": "2.2.0-beta3-build3402",
+		"dotnet-test-xunit": "2.2.0-preview3-build1047",
+		"InMemoryDbIsolation.Domain": "1.0.0-*",
+		"Microsoft.EntityFrameworkCore.InMemory": "1.0.1",
+		"Microsoft.EntityFrameworkCore": "1.0.1"
+	},
+
+	"tools": {
+		"SpecFlow.NetCore": "1.0.0-rc6"
+	},
+
+	"testRunner": "xunit",
+
+	"scripts": {
+		"precompile": [ "dotnet SpecFlow.NetCore" ]
+	},
+
+	"buildOptions": {
+		"copyToOutput": [ "xunit.runner.json" ]
+	},
+
+	"frameworks": {
+		"net461": {
+		}
+	}
+}
